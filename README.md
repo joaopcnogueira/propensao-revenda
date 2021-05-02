@@ -45,3 +45,11 @@ Abra o seguinte caminho no seu navegador:
 6. [Pycaret](https://pycaret.org/): machine learning
 7. [FastAPI](https://fastapi.tiangolo.com/): construção de APIs
 8. [Streamlit](https://streamlit.io/): construção de Web Apps
+
+
+# Steps para deploy na GCP com Google Compute Engine
+
+1. Criar uma instância VM (servidor) no Google Compute Engine
+2. Liberar tráfico `http` e `https` para o servidor
+3. Liberar a porta `5000` no servidor, que é a porta padrão do fastapi
+4. Abrir uma conexão ssh com a instância e executar os comandos no arquivo `deploy.sh`
