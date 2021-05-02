@@ -32,3 +32,13 @@ A tabela utilizada para treinar o modelo, também chamada de dataset ou abt (ana
 2. Execute o código `notebooks/01_criando_abt.ipynb`. Esse código no final irá criar e disponibilizar a tabela `datasets/propensao_revenda_abt.csv` na pasta `datasets`;
 3. Caso queira também realizar o treinamento do modelo, pode executar o notebook em `notebooks/02_model_training.ipynb` que no final irá criar e disponibilizar um modelo em `models/modelo_final.pkl`.
 
+# Tecnologias Utilizadas
+
+1. [Python](https://www.python.org/): linguagem de programação
+2. [Anaconda](https://www.anaconda.com/): gerenciamento de ambientes virtuais
+3. [Numpy](https://numpy.org/): processamento de dados
+4. [Pandas](https://pandas.pydata.org/): processamento de dados
+5. [Scikit-learn](https://scikit-learn.org/stable/): machine learning
+6. [Pycaret](https://pycaret.org/): machine learning
+7. [FastAPI](https://fastapi.tiangolo.com/): construção de APIs
+8. [Streamlit](https://streamlit.io/): construção de Web Apps
