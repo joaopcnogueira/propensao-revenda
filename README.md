@@ -12,28 +12,37 @@ A tabela utilizada para treinar o modelo, também chamada de dataset ou abt (ana
 # API e Web App
 
 ## Steps para execução da API e Web App
-### 1. Download
+### 1. Instale o Git
+* Link para download: https://git-scm.com/downloads
 
-Faça o download ou clone o código na sua máquina local
+### 2. Faça o clone do código fonte
+Abra o `CMD` e digite o seguinte comando para baixar o código
 
-## 2. Crie um ambiente python com Anaconda
+`git clone https://github.com/joaopcnogueira/propensao-revenda.git`
+
+Depois de finalizado, digite o comando `dir` e verifique que uma pasta chamada `propensao-revenda` agora existe no seu computador.
+Essa pasta contém todo o código fonte da nossa aplicação.
+
+### 3. Instale o Anaconda
+* Link para download: https://www.anaconda.com/products/individual
+
+## 4. Crie um ambiente python com Anaconda
 `conda create --name <environment_name> python==3.7.10`
 
-## 3. Instale os pacotes necessários
-`python install -r requirements.txt`
+## 5. Instale os pacotes necessários
+`pip install -r requirements.txt`
 
-## 4. Inicie o serviço da API
+## 6. Inicie o serviço da API
 `uvicorn api:app --reload`
 
-## 5. Experimente a API
+## 7. Experimente a API
 Abra o seguinte caminho no seu navegador:
 * `http://127.0.0.1:8000/docs`
 * Clique no endpoint `/predict` e depois em `Try it out` 
 * Só preencher os valores desejados das features e clicar em `Execute` 
 
-## 6. Executar o Web App
+## 8. Executar o Web App
 `streamlit run web_app.py`
-
 
 # Tecnologias Utilizadas
 
