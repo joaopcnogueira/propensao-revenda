@@ -18,7 +18,9 @@ A tabela utilizada para treinar o modelo, também chamada de dataset ou abt (ana
 ### 2. Faça o clone do código fonte
 Abra o `CMD` e digite o seguinte comando para baixar o código
 
-`git clone https://github.com/joaopcnogueira/propensao-revenda.git`
+```
+git clone https://github.com/joaopcnogueira/propensao-revenda.git
+```
 
 Depois de finalizado, digite o comando `dir` e verifique que uma pasta chamada `propensao-revenda` agora existe no seu computador.
 Essa pasta contém todo o código fonte da nossa aplicação.
@@ -27,13 +29,19 @@ Essa pasta contém todo o código fonte da nossa aplicação.
 * Link para download: https://www.anaconda.com/products/individual
 
 ### 4. Crie um ambiente python com Anaconda
-`conda create --name <environment_name> python==3.7.10`
+```
+conda create --name <environment_name> python==3.7.10
+```
 
 ### 5. Instale os pacotes necessários
-`pip install -r requirements.txt`
+```
+pip install -r requirements.txt
+```
 
 ### 6. Inicie o serviço da API
-`uvicorn api:app --reload`
+```
+uvicorn api:app --reload`
+```
 
 ### 7. Experimente a API
 Abra o seguinte caminho no seu navegador:
@@ -42,7 +50,9 @@ Abra o seguinte caminho no seu navegador:
 * Só preencher os valores desejados das features e clicar em `Execute` 
 
 ### 8. Executar o Web App
-`streamlit run web_app.py`
+```
+streamlit run web_app.py
+```
 
 # Tecnologias Utilizadas
 
