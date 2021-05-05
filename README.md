@@ -87,14 +87,16 @@ http://127.0.0.1:8501
 # Tecnologias Utilizadas
 
 1. [Python](https://www.python.org/): linguagem de programação
-2. [Anaconda](https://www.anaconda.com/): gerenciamento de ambientes virtuais
-3. [Numpy](https://numpy.org/): processamento de dados
-4. [Pandas](https://pandas.pydata.org/): processamento de dados
-5. [Scikit-learn](https://scikit-learn.org/stable/): machine learning
-6. [Pycaret](https://pycaret.org/): machine learning
-7. [FastAPI](https://fastapi.tiangolo.com/): construção de APIs
-8. [Streamlit](https://streamlit.io/): construção de Web Apps
-9. [Git](https://git-scm.com/): versionamento de código
+2. [Colab](https://colab.research.google.com/notebooks/intro.ipynb): ambiente de treinamento de modelos
+3. [Anaconda](https://www.anaconda.com/): gerenciamento de ambientes virtuais
+4. [Numpy](https://numpy.org/): processamento de dados
+5. [Pandas](https://pandas.pydata.org/): processamento de dados
+6. [Scikit-learn](https://scikit-learn.org/stable/): machine learning
+7. [Pycaret](https://pycaret.org/): machine learning
+8. [FastAPI](https://fastapi.tiangolo.com/): construção de APIs
+9. [Streamlit](https://streamlit.io/): construção de Web Apps
+10. [Git](https://git-scm.com/): versionamento de código
+11. [Github](https://github.com/): repositório de código
 
 # Deploy na Google Cloud Platform (OPCIONAL)
 1. Abrir uma conta na GCP
