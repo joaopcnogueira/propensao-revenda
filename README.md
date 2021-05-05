@@ -116,6 +116,12 @@ http://127.0.0.1:8501
     1. Em `Conectar`, clicar em `SSH`;
     2. Executar os comandos no script `deploy.sh`.
 
+5. Executando as aplicações
+    1. Para executar as aplicações, primeiro tem que buscar o IP da máquina virtual. Navegue até `Menu de navegação` > ` Compute Engine` > `Instância de VM`, e copie o IP da máquina virtual.
+    2. Com o IP em mãos, abra o seu navegador e digite os seguintes endereços:
+        - Para executar a API: `http://IP_DA_MAQUINA_VIRTUAL:8000/docs`
+        - Para executar a Web App: `http://IP_DA_MAQUINA_VIRTUAL:8501`
+
 
 # Steps para criação da analytical base table e treinamento do modelo (OPCIONAL)
 A tabela utilizada para treinar o modelo, também chamada de dataset ou abt (analytical base table) foi criada a partir dos dados transacionais disponibilizados pela Olist. Para replicar o `ETL` reponsável pela criação do dataset de treinamento, realize os seguintes passos:
