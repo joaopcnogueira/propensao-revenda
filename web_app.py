@@ -1,5 +1,6 @@
 import numpy as np
 import pandas as pd
+import base64
 import streamlit as st
 from pycaret.classification import load_model, predict_model
 
@@ -43,7 +44,13 @@ def run():
             data = pd.read_csv(file_upload)
             predictions = predict_model(estimator=model, data=data)
             predictions['proba_nao_revender_next_6m'] = np.where(predictions['Label'] == 1, predictions['Score'], 1-predictions['Score'])
+            # mostra a tabela com as previsões no site
             st.write(predictions)
+            # cria o link de download da tabela com as previsões
+            csv = predictions.to_csv(sep=';', index=False)
+            b64 = base64.b64encode(csv.encode()).decode() # some strings <-> bytes conversions necessary here
+            href = f'<a href="data:file/csv;base64,{b64}">Download CSV File</a> (right-click and save as &lt;some_name&gt;.csv)'
+            st.markdown(href, unsafe_allow_html=True)
 
 if __name__ == '__main__':
     run()
