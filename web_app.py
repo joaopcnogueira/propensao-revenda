@@ -28,9 +28,7 @@ def run():
                       'receita_12m' : receita_12m, 
                       'recencia' : recencia}
         input_df = pd.DataFrame([input_dict])
-
-        label=-99
-        score=-99
+        
         if st.button("Predict"):
             predictions = predict_model(estimator=model, data=input_df)
             predictions['proba_nao_revender_next_6m'] = np.where(predictions['Label'] == 1, predictions['Score'], 1-predictions['Score'])
