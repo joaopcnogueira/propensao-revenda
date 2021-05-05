@@ -3,12 +3,6 @@ Esse projeto foi feito com a [base de dados pública da Olist disponibilizada no
 
 O objetivo do modelo de machine learning é calcular a propensão de que um dado seller da Olist não irá revender nos próximos 6 meses.
 
-A tabela utilizada para treinar o modelo, também chamada de dataset ou abt (analytical base table) foi criada a partir dos dados transacionais disponibilizados pela Olist. Para replicar o `ETL` reponsável pela criação do dataset de treinamento, realize os seguintes passos:
-
-1. Faça o download das bases da Olist: https://www.kaggle.com/olistbr/brazilian-ecommerce e disponibilize as bases baixadas na pasta `datasets`.
-2. Execute o código `notebooks/01_criando_abt.ipynb`. Esse código no final irá criar e disponibilizar a tabela `datasets/propensao_revenda_abt.csv` na pasta `datasets`;
-3. Caso queira também realizar o treinamento do modelo, pode executar o notebook em `notebooks/02_model_training.ipynb` que no final irá criar e disponibilizar um modelo em `models/modelo_final.pkl`.
-
 # API e Web App
 
 ## Steps para execução da API e Web App
@@ -22,37 +16,74 @@ Abra o `CMD` e digite o seguinte comando para baixar o código
 git clone https://github.com/joaopcnogueira/propensao-revenda.git
 ```
 
-Depois de finalizado, digite o comando `dir` e verifique que uma pasta chamada `propensao-revenda` agora existe no seu computador.
-Essa pasta contém todo o código fonte da nossa aplicação.
+Depois de finalizado, digite o comando `dir` e verifique que uma pasta chamada `propensao-revenda` ou `propensao-revenda-main` agora existe no seu computador.
+Essa pasta contém todo o código fonte da nossa aplicação. Navegue até a pasta digitando o seguinte comando no `CMD`
+
+```
+cd propensao-venda
+```
+
+ou 
+
+```
+cd propensao-venda-main
+```
 
 ### 3. Instale o Anaconda
 * Link para download: https://www.anaconda.com/products/individual
 
+No momento da instalação, selecionar a seguinte opção: `Add Anaconda3 to my PATH environment variable`
+
+
 ### 4. Crie um ambiente python com Anaconda
+
 ```
-conda create --name <environment_name> python==3.7.10
+conda create --name ambiente_api python==3.7.10
 ```
 
-### 5. Instale os pacotes necessários
+### 5. Ative o ambiente python criado no passo anterior
+
+```
+conda activate ambiente_api
+```
+
+### 6. Instale os pacotes necessários
+
 ```
 pip install -r requirements.txt
 ```
 
-### 6. Inicie o serviço da API
+Caso o comando acima não funciona, executar o comando abaixo:
+
 ```
-uvicorn api:app --reload`
+pip install --user -r requirements.txt
 ```
 
-### 7. Experimente a API
+### 7. Inicie o serviço da API
+
+```
+uvicorn api:app --reload
+```
+
+### 8. Experimente a API
 Abra o seguinte caminho no seu navegador:
 * `http://127.0.0.1:8000/docs`
 * Clique no endpoint `/predict` e depois em `Try it out` 
 * Só preencher os valores desejados das features e clicar em `Execute` 
 
-### 8. Executar o Web App
+### 9. Para executar o Web App, abra outro `CMD` dentro do diretório que estão os códigos e execute os comandos abaixo
+
 ```
-streamlit run web_app.py
+conda activate ambiente_api # ativar o ambiente python
+streamlit run web_app.py # executando o streamlit
 ```
+
+### 10. Abra a página do web app digitando o endereço abaixo no navegador
+
+```
+http://127.0.0.1:8501
+```
+
 
 # Tecnologias Utilizadas
 
@@ -64,6 +95,7 @@ streamlit run web_app.py
 6. [Pycaret](https://pycaret.org/): machine learning
 7. [FastAPI](https://fastapi.tiangolo.com/): construção de APIs
 8. [Streamlit](https://streamlit.io/): construção de Web Apps
+9. [Git](https://git-scm.com/): versionamento de código
 
 # Deploy na GCP
 1. Abrir uma conta na GCP
@@ -84,3 +116,16 @@ streamlit run web_app.py
 4. Abrir um SSH (terminal)
     1. Em `Conectar`, clicar em `SSH`;
     2. Executar os comandos no script `deploy.sh`.
+
+
+# Steps para criação da analytical base table e treinamento do modelo (OPCIONAL)
+A tabela utilizada para treinar o modelo, também chamada de dataset ou abt (analytical base table) foi criada a partir dos dados transacionais disponibilizados pela Olist. Para replicar o `ETL` reponsável pela criação do dataset de treinamento, realize os seguintes passos:
+
+1. Faça o download das bases da Olist: https://www.kaggle.com/olistbr/brazilian-ecommerce e disponibilize as bases baixadas na pasta `datasets`.
+2. Execute o código `notebooks/01_criando_abt.ipynb`. Esse código no final irá criar e disponibilizar a tabela `datasets/propensao_revenda_abt.csv` na pasta `datasets`;
+3. Caso queira também realizar o treinamento do modelo, pode executar o notebook em `notebooks/02_model_training.ipynb` que no final irá criar e disponibilizar um modelo em `models/modelo_final.pkl`.
+A tabela utilizada para treinar o modelo, também chamada de dataset ou abt (analytical base table) foi criada a partir dos dados transacionais disponibilizados pela Olist. Para replicar o `ETL` reponsável pela criação do dataset de treinamento, realize os seguintes passos:
+
+1. Faça o download das bases da Olist: https://www.kaggle.com/olistbr/brazilian-ecommerce e disponibilize as bases baixadas na pasta `datasets`.
+2. Execute o código `notebooks/01_criando_abt.ipynb`. Esse código no final irá criar e disponibilizar a tabela `datasets/propensao_revenda_abt.csv` na pasta `datasets`;
+3. Caso queira também realizar o treinamento do modelo, pode executar o notebook em `notebooks/02_model_training.ipynb` que no final irá criar e disponibilizar um modelo em `models/modelo_final.pkl`.
