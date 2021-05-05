@@ -84,7 +84,6 @@ streamlit run web_app.py # executando o streamlit
 http://127.0.0.1:8501
 ```
 
-
 # Tecnologias Utilizadas
 
 1. [Python](https://www.python.org/): linguagem de programação
@@ -97,7 +96,7 @@ http://127.0.0.1:8501
 8. [Streamlit](https://streamlit.io/): construção de Web Apps
 9. [Git](https://git-scm.com/): versionamento de código
 
-# Deploy na GCP
+# Deploy na Google Cloud Platform (OPCIONAL)
 1. Abrir uma conta na GCP
 2. Criar uma VM (instância) Ubuntu-20.04 no Google Compute Engine
     1. `Menu de navegação` > `Compute Engine` > `Instância de VM` > `Criar Instância`;
