@@ -26,29 +26,29 @@ Após o login realizado clique em **Launch a virtual machine** conforme imagem a
 
 
 
-<img src="tutoriais/imagens/aws_01.png" style="zoom:50%;" />
+<img src="./imagens/aws_01.png" style="zoom:50%;" />
 
 **Caso apareça uma mensagem informando que o serviço está quase pronto é por que a AWS define um período máximo de 24 horas para que os serviços estejam disponíveis, porém é provável que após alguns minutos tudo esteja pronto para uso.**
 
 Caso, já esteja tudo pronto, a seguinte tela irá aparecer.
 
-<img src="tutoriais/imagens/aws_02.png" style="zoom:50%;" />
+<img src="./imagens/aws_02.png" style="zoom:50%;" />
 
 Digite **Ubuntu** no campo da pesquisa e depois selecione **Ubuntu Server 20.04 LTS (HVM), SSD Volume Type**, por fim clique em **Select**.
 
 Na próxima etapa selecione o tipo de instância que será criada. 
 
-<img src="tutoriais/imagens/aws_03.png" style="zoom:50%;" />
+<img src="./imagens/aws_03.png" style="zoom:50%;" />
 
 Selecione a **t2.micro** que é elegível para o nível gratuito. Clique em **Next: Configure Instance Details**.
 
 Nessa etapa não precisa alterar nenhuma informação, basta clicar em **Next: Add Storage**.
 
-<img src="tutoriais/imagens/aws_04.png" style="zoom:55%;" />
+<img src="./imagens/aws_04.png" style="zoom:55%;" />
 
 Altere o valor de 8 para **30 GiB **de armazenamento. Não adicione mais do que 30, pois é o limite para o nível gratuito. Por fim, clique em **Next: Add Tags**.
 
-<img src="tutoriais/imagens/aws_05.png" style="zoom:55%;" />
+<img src="./imagens/aws_05.png" style="zoom:55%;" />
 
 Adicione uma Tag: na coluna **key** adicione o valor `Nome` e na coluna **value** adicione o valor `deploy_modelos` (ou qualquer outro nome). 
 
@@ -56,7 +56,7 @@ Clique em **Next: Configure Security Group**.
 
 Nessa etapa será necessário adicionar diversas portas para que possamos acessar os serviços que iremos executar. Preencha conforme a imagem abaixo. Clique em **Add Rule** para adicionar novas linhas.
 
-<img src="tutoriais/imagens/aws_06.png" style="zoom:55%;" />
+<img src="./imagens/aws_06.png" style="zoom:55%;" />
 
 A tabela abaixo apresenta os tipos e a porta que deve ser utilizada
 
@@ -74,11 +74,11 @@ Na próxima tela será apresentado uma visão geral de todas as configurações 
 
 O último passo será criar uma chave de acesso que será útil para acessar a instancia via SSH. Crie um nome e faça o download da chave. Salve em um lugar seguro.
 
-<img src="tutoriais/imagens/aws_07.png" style="zoom:55%;" />
+<img src="./imagens/aws_07.png" style="zoom:55%;" />
 
 Após clique em **Launch Instances**. A seguinte tela irá aparecer:
 
-<img src="tutoriais/imagens/aws_08.png" style="zoom:55%;" />
+<img src="./imagens/aws_08.png" style="zoom:55%;" />
 
 Clique em **View Instances** para finalizar.
 
@@ -86,21 +86,21 @@ Clique em **View Instances** para finalizar.
 
 Na página das instancias, clique na caixa de seleção do lado esquerdo do nome que foi adicionado para visualizar as informações sobre a instancia criada. Conforme ilustrado na imagem abaixo.
 
-<img src="tutoriais/imagens/aws_09.png" style="zoom:55%;" />
+<img src="./imagens/aws_09.png" style="zoom:55%;" />
 
 Anote o IP Publico (**Public IP**) pois iremos utilizar nos próximos passos.
 
 Por fim, iremos acessar o terminal da instancia criada para instalar e configurar a implantação da API e do Web App. Para isso, clique com o botão direito em cima da linha da instancia que criamos e clique em **Connect** conforme imagem abaixo:
 
-<img src="tutoriais/imagens/aws_10.png" style="zoom:55%;" />
+<img src="./imagens/aws_10.png" style="zoom:55%;" />
 
 Uma nova janela será aberta, com qual tipo de acesso será feito. Clique em **EC2 Instance Connect** e depois clique em **Connect**. 
 
-<img src="tutoriais/imagens/aws_11.png" style="zoom:55%;" />
+<img src="./imagens/aws_11.png" style="zoom:55%;" />
 
 Um nova aba será aberta com o terminal disponível, conforme imagem abaixo.
 
-<img src="tutoriais/imagens/aws_12.png" style="zoom:75%;" />
+<img src="./imagens/aws_12.png" style="zoom:75%;" />
 
 Ótimo, já podemos seguir com os próximos passos!
 
@@ -133,11 +133,11 @@ Após a finalização da instalação, deixe essa janela aberta e acesse os serv
 
 Para não ocasionar custos, termine a instancia que foi criada.  Para isso, na lista de instancias, clique com o botão direto em cima da instancia que deseja terminar e clique em **Terminate Instance**, conforme imagem abaix.
 
-<img src="tutoriais/imagens/aws_13.png" style="zoom:75%;" />
+<img src="./imagens/aws_13.png" style="zoom:75%;" />
 
 Uma mensagem de confirmação irá aparecer. Clique em **Terminate** para confirmar.
 
-<img src="tutoriais/imagens/aws_14.png" style="zoom:75%;" />
+<img src="./imagens/aws_14.png" style="zoom:75%;" />
 
 
 
