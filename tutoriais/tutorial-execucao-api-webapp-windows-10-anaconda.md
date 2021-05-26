@@ -99,11 +99,11 @@ Abra o seguinte caminho no seu navegador:
 Abra um novo `CMD`, acesso o diretório dos códigos e ative o ambiente virtual criado anteriormente. Para realizar os passos, execute os comandos abaixo:
 
 ```
-conda activate ambiente_api # ativar o ambiente python
+conda activate ambiente_api
 ```
 
 ```
-streamlit run web_app.py # executando o streamlit
+streamlit run web_app.py
 ```
 
 Se for a primeira execução, o Streamlit irá solicitar algumas informações. Pode deixar em branco, apenas aperte Enter.
