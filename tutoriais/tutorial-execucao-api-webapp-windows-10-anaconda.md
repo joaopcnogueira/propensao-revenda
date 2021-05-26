@@ -1,12 +1,25 @@
 # Tutorial deploy no Windows 10 com Anaconda
 ## 1. Pré-requisitos
 
-### 1.1 Instale o Git
+### 1.1. Instale o Microsoft Visual C++
+
+* Link para o download: https://visualstudio.microsoft.com/pt-br/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16
+
+Execute o arquivo baixado e clique em Ferramentas de Build do C++ e depois em Instalar, conforme imagem abaixo.
+
+![Path Python](./imagens/microsoft-visual-cpp.png)
+
+Esse processo irá demorar um pouco (~ 10 minutos). Faça um :coffee: ​e aproveite :)
+
+Quando terminar, feche o instalador e continue com os próximo tópicos.
+
+
+### 1.2 Instale o Git
 * Link para download: https://git-scm.com/downloads
 
 ![Git Download](./imagens/download_git.png)
 
-### 1.2 Instale o Anaconda
+### 1.3 Instale o Anaconda
 * Link para download: https://www.anaconda.com/products/individual
 
 No momento da instalação, selecionar a seguinte opção: `Add Anaconda3 to my PATH environment variable`
