@@ -11,6 +11,8 @@ Abra o `CMD` e digite o seguinte comando para baixar o código
 git clone https://github.com/joaopcnogueira/propensao-revenda.git
 ```
 
+![Git Clone](./imagens/git_clone.png)
+
 Depois de finalizado, digite o comando `dir` e verifique que uma pasta chamada `propensao-revenda` ou `propensao-revenda-main` agora existe no seu computador.
 Essa pasta contém todo o código fonte da nossa aplicação. Navegue até a pasta digitando o seguinte comando no `CMD`
 
