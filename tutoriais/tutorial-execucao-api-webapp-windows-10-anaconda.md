@@ -27,6 +27,8 @@ cd propensao-venda-main
 
 No momento da instalação, selecionar a seguinte opção: `Add Anaconda3 to my PATH environment variable`
 
+![Anaconda Path](./imagens/anaconda_instalacao.png)
+
 
 ### 4. Crie um ambiente python com Anaconda
 
