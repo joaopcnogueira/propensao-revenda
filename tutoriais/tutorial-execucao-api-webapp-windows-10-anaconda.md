@@ -50,6 +50,8 @@ conda create --name ambiente_api python==3.7.10
 conda activate ambiente_api
 ```
 
+![Conda Activate Env](./imagens/conda_activate.png)
+
 ### 6. Instale os pacotes necessários
 
 ```
