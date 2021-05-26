@@ -41,13 +41,13 @@ Depois de finalizado, digite o comando `dir` e verifique que uma pasta chamada `
 Essa pasta contém todo o código fonte da nossa aplicação. Navegue até a pasta digitando o seguinte comando no `CMD`
 
 ```
-cd propensao-venda
+cd propensao-revenda
 ```
 
 ou 
 
 ```
-cd propensao-venda-main
+cd propensao-revenda-main
 ```
 
 ![CD Command](./imagens/cd_command.png)
