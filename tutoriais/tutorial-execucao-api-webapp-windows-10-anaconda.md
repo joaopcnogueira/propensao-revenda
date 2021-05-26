@@ -1,7 +1,7 @@
 # Tutorial deploy no Windows 10 com Anaconda
 ## 1. Pré-requisitos
 
-### 1.1. Instale o Microsoft Visual C++
+### 1.1 Instale o Microsoft Visual C++
 
 * Link para o download: https://visualstudio.microsoft.com/pt-br/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16
 
