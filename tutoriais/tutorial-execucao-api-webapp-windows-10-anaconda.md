@@ -26,6 +26,8 @@ ou
 cd propensao-venda-main
 ```
 
+![CD Command](./imagens/cd_command.png)
+
 ### 3. Instale o Anaconda
 * Link para download: https://www.anaconda.com/products/individual
 
@@ -39,6 +41,8 @@ No momento da instalação, selecionar a seguinte opção: `Add Anaconda3 to my 
 ```
 conda create --name ambiente_api python==3.7.10
 ```
+
+![Conda Create Env](./imagens/conda_create_env.png)
 
 ### 5. Ative o ambiente python criado no passo anterior
 
