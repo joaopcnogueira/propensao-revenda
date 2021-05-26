@@ -2,6 +2,8 @@
 ### 1. Instale o Git
 * Link para download: https://git-scm.com/downloads
 
+![Git Download](./imagens/download_git.png)
+
 ### 2. Faça o clone do código fonte
 Abra o `CMD` e digite o seguinte comando para baixar o código
 
