@@ -1,10 +1,21 @@
-## Tutorial deploy no Windows 10 com Anaconda
-### 1. Instale o Git
+# Tutorial deploy no Windows 10 com Anaconda
+## 1. Pré-requisitos
+
+### 1.1 Instale o Git
 * Link para download: https://git-scm.com/downloads
 
 ![Git Download](./imagens/download_git.png)
 
-### 2. Faça o clone do código fonte
+### 1.2 Instale o Anaconda
+* Link para download: https://www.anaconda.com/products/individual
+
+No momento da instalação, selecionar a seguinte opção: `Add Anaconda3 to my PATH environment variable`
+
+![Anaconda Path](./imagens/anaconda_instalacao.png)
+
+## 2. Configuração
+
+### 2.1 Faça o clone do código fonte
 Abra o `CMD` e digite o seguinte comando para baixar o código
 
 ```
@@ -28,15 +39,7 @@ cd propensao-venda-main
 
 ![CD Command](./imagens/cd_command.png)
 
-### 3. Instale o Anaconda
-* Link para download: https://www.anaconda.com/products/individual
-
-No momento da instalação, selecionar a seguinte opção: `Add Anaconda3 to my PATH environment variable`
-
-![Anaconda Path](./imagens/anaconda_instalacao.png)
-
-
-### 4. Crie um ambiente python com Anaconda
+### 2.2 Crie um ambiente python com Anaconda
 
 ```
 conda create --name ambiente_api python==3.7.10
@@ -44,15 +47,15 @@ conda create --name ambiente_api python==3.7.10
 
 ![Conda Create Env](./imagens/conda_create_env.png)
 
-### 5. Ative o ambiente python criado no passo anterior
+### 2.3 Ative o ambiente python criado no passo anterior
 
 ```
 conda activate ambiente_api
 ```
 
-![Conda Activate Env](./imagens/conda_activate.png)
+![Conda Activate Env](./imagens/conda_activate_env.png)
 
-### 6. Instale os pacotes necessários
+### 2.4 Instale os pacotes necessários
 
 ```
 pip install -r requirements.txt
@@ -64,28 +67,34 @@ Caso o comando acima não funciona, executar o comando abaixo:
 pip install --user -r requirements.txt
 ```
 
-### 7. Inicie o serviço da API
+![Pip Install Requirements](./imagens/pip_install_requirements.png)
+
+## 3. Iniciando e testando o deploy
+### 3.1 Inicie o serviço da API
 
 ```
 uvicorn api:app --reload
 ```
 
-### 8. Experimente a API
+### 3.2 Testando a API
 Abra o seguinte caminho no seu navegador:
 * `http://127.0.0.1:8000/docs`
 * Clique no endpoint `/predict` e depois em `Try it out` 
 * Só preencher os valores desejados das features e clicar em `Execute` 
 
-### 9. Para executar o Web App, abra outro `CMD` dentro do diretório que estão os códigos e execute os comandos abaixo
+### 3.3 Testando o Web App
+Abra um novo `CMD`, acesso o diretório dos códigos e ative o ambiente virtual criado anteriormente. Para realizar os passos, execute os comandos abaixo:
 
 ```
 conda activate ambiente_api # ativar o ambiente python
+```
+
+```
 streamlit run web_app.py # executando o streamlit
 ```
 
-### 10. Abra a página do web app digitando o endereço abaixo no navegador
+Se for a primeira execução, o Streamlit irá solicitar algumas informações. Pode deixar em branco, apenas aperte Enter.
 
-```
-http://127.0.0.1:8501
-```
+Dê a permissão necessária, caso o Firewall bloqueie (basta clicar em Permitir Acesso, caso uma janela apareça).
 
+Por fim, abra o navegador e digite a URL: `http://127.0.0.1:8501`.
