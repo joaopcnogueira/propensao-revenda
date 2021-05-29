@@ -7,8 +7,8 @@ O objetivo do modelo de machine learning é calcular a propensão de que um dado
 
 Foram desenvolvidos diversos tutoriais para executar a API e Web app.
 
-* [Tutorial para execução API e Web App localmente no Windows 10 com Anaconda](tutoriais/tutorial-execucao-api-webapp-windows-10-anaconda.md)
 * [Tutorial para execução API e Web App localmente no Windows 10 com Python](tutoriais/tutorial-execucao-api-webapp-windows-10-python.md)
+* [Tutorial para execução API e Web App localmente no Windows 10 com Anaconda](tutoriais/tutorial-execucao-api-webapp-windows-10-anaconda.md)
 * [Tutorial para execução API e Web App na GCP - Google Cloud Plataform](tutoriais/tutorial-execucao-api-webapp-gcp.md)
 * [Tutorial para execução API e Web App na AWS - Amazon Web Service](tutoriais/tutorial-execucao-api-webapp-aws.md)
 
