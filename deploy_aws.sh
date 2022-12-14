@@ -37,7 +37,7 @@ pip install pycaret
 
 deactivate
 
-sleep5
+sleep 5
 
 source env_deploy/bin/activate
 
